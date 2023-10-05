@@ -7,5 +7,20 @@ public enum TargetSelectorArgumentType {
     X,
     Y,
     Z,
-    DISTANCE
+    DISTANCE,
+    X_ROTATION,
+    Y_ROTATION,
+
+    /**
+     * Volume dimension
+     */
+    DX,
+    /**
+     * Volume dimension
+     */
+    DY,
+    /**
+     * Volume dimension
+     */
+    DZ,
 }
