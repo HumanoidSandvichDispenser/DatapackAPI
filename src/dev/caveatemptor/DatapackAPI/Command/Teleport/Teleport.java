@@ -1,8 +1,8 @@
 package dev.caveatemptor.DatapackAPI.Command.Teleport;
 
 import dev.caveatemptor.DatapackAPI.Entity.Entity;
-import dev.caveatemptor.DatapackAPI.Vector.Vector2;
-import dev.caveatemptor.DatapackAPI.Vector.Vector3;
+import dev.caveatemptor.DatapackAPI.Location.Location;
+import dev.caveatemptor.DatapackAPI.Rotation.Rotation;
 
 
 // TODO: Implement facingEntity
@@ -12,9 +12,9 @@ import dev.caveatemptor.DatapackAPI.Vector.Vector3;
  */
 public class Teleport implements dev.caveatemptor.DatapackAPI.Command.Command {
     Entity target;
-    Vector3 location;
-    Vector2 rotation;
-    Vector3 facingLocation;
+    Location location;
+    Rotation rotation;
+    Location facingLocation;
 
 
     /**
@@ -22,7 +22,7 @@ public class Teleport implements dev.caveatemptor.DatapackAPI.Command.Command {
      * @param target Defines what entities will be selected as a target.
      * @param location The location to teleport the target(s) to.
      */
-    public Teleport(Entity target, Vector3 location) {
+    public Teleport(Entity target, Location location) {
         this.target = target;
         this.location = location;
     }
@@ -34,7 +34,7 @@ public class Teleport implements dev.caveatemptor.DatapackAPI.Command.Command {
      * @param location The location to teleport the target(s) to.
      * @param rotation The rotation to set the target(s) to.
      */
-    public Teleport(Entity target, Vector3 location, Vector2 rotation) {
+    public Teleport(Entity target, Location location, Rotation rotation) {
         this.target = target;
         this.location = location;
         this.rotation = rotation;
@@ -46,7 +46,7 @@ public class Teleport implements dev.caveatemptor.DatapackAPI.Command.Command {
      * @param location The location to teleport the target to.
      * @param facingLocation The location to face towards.
      */
-    public Teleport(Entity target, Vector3 location, Vector3 facingLocation) {
+    public Teleport(Entity target, Location location, Location facingLocation) {
         this.target = target;
         this.location = location;
         this.facingLocation = facingLocation;
@@ -56,7 +56,7 @@ public class Teleport implements dev.caveatemptor.DatapackAPI.Command.Command {
      * Creates a new Teleport command with the given location. This will only affect the entity executing the command.
      * @param location The location to teleport the target to.
      */
-    public Teleport(Vector3 location) {
+    public Teleport(Location location) {
         this.location = location;
     }
 

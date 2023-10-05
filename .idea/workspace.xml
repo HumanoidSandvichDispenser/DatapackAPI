@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="313cb72f-a3e4-4f32-9e43-c84b2666e2fe" name="Changes" comment="delete Scoreboard package i give up">
-      <change afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Block/BlockType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Command/Setblock/Setblock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Command/Setblock/SetblockReplaceType.java" afterDir="false" />
+    <list default="true" id="313cb72f-a3e4-4f32-9e43-c84b2666e2fe" name="Changes" comment="Add Setblock">
+      <change afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Location/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Position/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Rotation/Rotation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Vector/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Vector/Vector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Command/Setblock/Setblock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Command/Setblock/Setblock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Command/Teleport/Teleport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Command/Teleport/Teleport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Vector/Vector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Vector/Vector2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Vector/Vector3.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +50,8 @@
       <list>
         <option value="Record" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -399,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696540439161</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Add Setblock">
+      <created>1696544079370</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1696544079370</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -414,7 +425,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed Teleport.java" />
     <MESSAGE value="Fixed bug in TargetSelector" />
     <MESSAGE value="Began implementing execute command" />
     <MESSAGE value="Changed generate() i" />
@@ -439,6 +449,7 @@
     <MESSAGE value="Vectors now use doubles instead of ints" />
     <MESSAGE value="Removed unneeded if" />
     <MESSAGE value="delete Scoreboard package i give up" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete Scoreboard package i give up" />
+    <MESSAGE value="Add Setblock" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Setblock" />
   </component>
 </project>
