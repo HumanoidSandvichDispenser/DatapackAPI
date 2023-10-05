@@ -1,5 +1,7 @@
+dev.caveatemptor.DatapackAPI.Block
 dev.caveatemptor.DatapackAPI.Command
 dev.caveatemptor.DatapackAPI.Command.Execute
+dev.caveatemptor.DatapackAPI.Command.Setblock
 dev.caveatemptor.DatapackAPI.Command.Teleport
 dev.caveatemptor.DatapackAPI.Datapack
 dev.caveatemptor.DatapackAPI.Entity
