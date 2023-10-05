@@ -11,16 +11,18 @@ public enum TargetSelectorArgumentType {
     X_ROTATION,
     Y_ROTATION,
 
+
+    // TODO: DX, DY, DZ
     /**
-     * Volume dimension
+     * Volume dimension. Unimplemented.
      */
     DX,
     /**
-     * Volume dimension
+     * Volume dimension Unimplemented.
      */
     DY,
     /**
-     * Volume dimension
+     * Volume dimension Unimplemented.
      */
     DZ,
 }

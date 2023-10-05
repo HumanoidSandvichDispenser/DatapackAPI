@@ -7,7 +7,6 @@ package dev.caveatemptor.DatapackAPI.Entity.TargetSelector;
 public class TargetSelectorArgument {
     private TargetSelectorArgumentType argumentType;
     private String argumentValue;
-    private final boolean valid;
 
 
     /**
@@ -19,19 +18,8 @@ public class TargetSelectorArgument {
     // TODO: Implement the rest of the arguments // https://minecraft.fandom.com/wiki/Target_selectors
     // TODO: Error checking
     public TargetSelectorArgument(TargetSelectorArgumentType argumentType, int argumentValue) {
-        if (argumentType != TargetSelectorArgumentType.X
-                && argumentType != TargetSelectorArgumentType.Y
-                && argumentType != TargetSelectorArgumentType.Z
-                && argumentType != TargetSelectorArgumentType.DISTANCE) {
-
-            System.out.println("TargetSelectorArgument " + argumentType + " with value " + argumentValue + " is invalid!");
-            valid = false;
-        }
-        else {
-            this.argumentType = argumentType;
-            this.argumentValue = Integer.toString(argumentValue);
-            valid = true;
-        }
+        this.argumentType = argumentType;
+        this.argumentValue = Integer.toString(argumentValue);
     }
 
 
