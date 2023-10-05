@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="313cb72f-a3e4-4f32-9e43-c84b2666e2fe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Command/Scoreboard/Scoreboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Command/Scoreboard/ScoreboardCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Command/Scoreboard/ScoreboardObjectivesCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Command/Scoreboard/ScoreboardPlayersCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_3_2023_8_13_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_3_2023_8_13_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Entity/TargetSelector/TargetSelectorArgument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Entity/TargetSelector/TargetSelectorArgument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Entity/TargetSelector/TargetSelectorArgumentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Entity/TargetSelector/TargetSelectorArgumentType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Command/Scoreboard/Scoreboard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Command/Scoreboard/ScoreboardCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Command/Scoreboard/ScoreboardObjectivesCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Command/Scoreboard/ScoreboardPlayersCommand.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +47,8 @@
       <list>
         <option value="Enum" />
         <option value="Record" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -149,7 +148,7 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <list>
