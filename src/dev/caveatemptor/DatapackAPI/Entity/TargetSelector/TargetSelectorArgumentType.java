@@ -18,11 +18,11 @@ public enum TargetSelectorArgumentType {
      */
     DX,
     /**
-     * Volume dimension Unimplemented.
+     * Volume dimension. Unimplemented.
      */
     DY,
     /**
-     * Volume dimension Unimplemented.
+     * Volume dimension. Unimplemented.
      */
     DZ,
 }

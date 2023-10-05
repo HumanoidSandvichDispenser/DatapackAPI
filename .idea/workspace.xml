@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="313cb72f-a3e4-4f32-9e43-c84b2666e2fe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Vector/Vector2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Vector/Vector2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Vector/Vector3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Vector/Vector3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Command/Scoreboard/Scoreboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Command/Scoreboard/ScoreboardCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Command/Scoreboard/ScoreboardObjectivesCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Command/Scoreboard/ScoreboardPlayersCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Entity/TargetSelector/TargetSelectorArgument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Entity/TargetSelector/TargetSelectorArgument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Entity/TargetSelector/TargetSelectorArgumentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/caveatemptor/DatapackAPI/Entity/TargetSelector/TargetSelectorArgumentType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +48,8 @@
       <list>
         <option value="Enum" />
         <option value="Record" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -94,6 +99,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="dev.caveatemptor.DatapackAPI.Command.Scoreboard" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\wn10091617\IdeaProjects\DatapackAPI" />
     </key>
@@ -370,7 +378,23 @@
       <option name="project" value="LOCAL" />
       <updated>1696522095992</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Vectors now use doubles instead of ints">
+      <option name="closed" value="true" />
+      <created>1696522150201</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1696522150201</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Removed unneeded if">
+      <option name="closed" value="true" />
+      <created>1696522359921</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1696522359921</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -385,7 +409,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added javadocs" />
     <MESSAGE value="update .gitignore" />
     <MESSAGE value="Fixed Teleport.java" />
     <MESSAGE value="Fixed bug in TargetSelector" />
@@ -409,6 +432,8 @@
     <MESSAGE value="Added support for datapack images" />
     <MESSAGE value="Added last TargetSelectorType" />
     <MESSAGE value="Added rest of TargetSelectorArgumentType enum&#10;=" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added rest of TargetSelectorArgumentType enum&#10;=" />
+    <MESSAGE value="Vectors now use doubles instead of ints" />
+    <MESSAGE value="Removed unneeded if" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unneeded if" />
   </component>
 </project>

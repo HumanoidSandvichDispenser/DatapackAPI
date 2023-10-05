@@ -5,8 +5,8 @@ package dev.caveatemptor.DatapackAPI.Entity.TargetSelector;
  * An argument for a targetSelector.
  */
 public class TargetSelectorArgument {
-    private TargetSelectorArgumentType argumentType;
-    private String argumentValue;
+    private final TargetSelectorArgumentType argumentType;
+    private final String argumentValue;
 
 
     /**
@@ -17,9 +17,10 @@ public class TargetSelectorArgument {
 
     // TODO: Implement the rest of the arguments // https://minecraft.fandom.com/wiki/Target_selectors
     // TODO: Error checking
-    public TargetSelectorArgument(TargetSelectorArgumentType argumentType, int argumentValue) {
+    // TODO: value ranges
+    public TargetSelectorArgument(TargetSelectorArgumentType argumentType, double argumentValue) {
         this.argumentType = argumentType;
-        this.argumentValue = Integer.toString(argumentValue);
+        this.argumentValue = Double.toString(argumentValue);
     }
 
 
@@ -38,16 +39,6 @@ public class TargetSelectorArgument {
      */
     public TargetSelectorArgumentType getArgumentType() {
         return argumentType;
-    }
-
-
-    /**
-     * Whether the target selector is valid and will work in-game.
-     * @return Whether the target selector is valid and will work in-game.
-     *
-     */
-    public boolean isValid() { // TODO: finish this
-        return valid;
     }
 
 
