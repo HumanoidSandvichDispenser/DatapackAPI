@@ -1,6 +1,6 @@
 package dev.caveatemptor.DatapackAPI.Vector;
 
-// TODO: Possibly rename vector classes
+// TODO: Split vectors into position (whole numbers), and location (doubles)
 
 public interface Vector {
     String generate();
