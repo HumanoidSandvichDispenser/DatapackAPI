@@ -4,13 +4,15 @@ package dev.caveatemptor.DatapackAPI.Entity.TargetSelector;
  * The types of target selectors. Not fully implemented.
  */
 public enum TargetSelectorType {
-    ALL_PLAYERS("@a"),
     NEAREST_PLAYER("@p"),
     RANDOM_PLAYER("@r"),
+    ALL_PLAYERS("@a"),
+    ALL_ENTITIES("@e"),
     /**
      * The entity executing the command.
      */
     SELF("@s");
+
 
     private final String selector;
 
