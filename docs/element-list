@@ -10,4 +10,6 @@ dev.caveatemptor.DatapackAPI.Entity.TargetSelector
 dev.caveatemptor.DatapackAPI.Entity.UUID
 dev.caveatemptor.DatapackAPI.Function
 dev.caveatemptor.DatapackAPI.Namespace
-dev.caveatemptor.DatapackAPI.Vector
+dev.caveatemptor.DatapackAPI.Positional.Location
+dev.caveatemptor.DatapackAPI.Positional.Position
+dev.caveatemptor.DatapackAPI.Positional.Rotation
