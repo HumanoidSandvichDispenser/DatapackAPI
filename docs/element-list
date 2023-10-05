@@ -1,0 +1,11 @@
+dev.caveatemptor.DatapackAPI.Command
+dev.caveatemptor.DatapackAPI.Command.Execute
+dev.caveatemptor.DatapackAPI.Command.Teleport
+dev.caveatemptor.DatapackAPI.Datapack
+dev.caveatemptor.DatapackAPI.Entity
+dev.caveatemptor.DatapackAPI.Entity.Player
+dev.caveatemptor.DatapackAPI.Entity.TargetSelector
+dev.caveatemptor.DatapackAPI.Entity.UUID
+dev.caveatemptor.DatapackAPI.Function
+dev.caveatemptor.DatapackAPI.Namespace
+dev.caveatemptor.DatapackAPI.Vector
