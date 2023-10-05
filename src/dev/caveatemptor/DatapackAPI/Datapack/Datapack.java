@@ -5,6 +5,7 @@ import dev.caveatemptor.DatapackAPI.Function.Function;
 import dev.caveatemptor.DatapackAPI.Namespace.Namespace;
 
 import javax.imageio.ImageIO;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.time.LocalDateTime;
@@ -20,7 +21,7 @@ public class Datapack {
     private final String name;
     private final String description;
     private final List<String> authors = new ArrayList<>();
-    private File datapackImage;
+    private BufferedImage datapackImage;
 
 
     /**
@@ -72,7 +73,7 @@ public class Datapack {
      * @param description Description of the datapack.
      * @param datapackImage Image for the datapack. Will be forced to 32x32 pixels.
      */
-    public Datapack(String name, String description, File datapackImage) {
+    public Datapack(String name, String description, BufferedImage datapackImage) {
         name = name.toLowerCase();
 
         this.name = name;
@@ -88,7 +89,7 @@ public class Datapack {
      * @param author Author of the datapack.
      * @param datapackImage Image for the datapack. Will be forced to 32x32 pixels.
      */
-    public Datapack(String name, String description, String author, File datapackImage) {
+    public Datapack(String name, String description, String author, BufferedImage datapackImage) {
         name = name.toLowerCase();
 
         this.name = name;
@@ -105,7 +106,7 @@ public class Datapack {
      * @param authors Authors of the datapack.
      * @param datapackImage Image for the datapack. Will be forced to 32x32 pixels.
      */
-    public Datapack(String name, String description, String[] authors, File datapackImage) {
+    public Datapack(String name, String description, String[] authors, BufferedImage datapackImage) {
         name = name.toLowerCase();
 
         this.name = name;
@@ -209,7 +210,22 @@ public class Datapack {
 
         // datapack image
         if (datapackImage != null) {
-            // TODO: Add datapack image
+            // scale the image to 32x32
+            BufferedImage scaledImg = new BufferedImage(32, 32, BufferedImage.TRANSLUCENT);
+            Graphics2D g2 = scaledImg.createGraphics();
+            g2.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
+            g2.drawImage(datapackImage, 0, 0, 32, 32, null);
+            g2.dispose();
+            datapackImage = scaledImg;
+
+            // output to datapack
+            try {
+                // retrieve image
+                File outputfile = new File(pack.getPath() + "/pack.png");
+                ImageIO.write(datapackImage, "png", outputfile);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 }
