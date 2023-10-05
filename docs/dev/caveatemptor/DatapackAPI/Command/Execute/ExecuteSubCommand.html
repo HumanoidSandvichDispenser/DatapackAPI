@@ -99,9 +99,12 @@ implements <a href="../Command.html" title="interface in dev.caveatemptor.Datapa
 <div class="col-last even-row-color">
 <div class="block">Creates a new ExecuteSubCommand with the specified type and Command value.</div>
 </div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(dev.caveatemptor.DatapackAPI.Command.Execute.ExecuteSubCommandType,java.lang.String)" class="member-name-link">ExecuteSubCommand</a><wbr>(<a href="ExecuteSubCommandType.html" title="enum class in dev.caveatemptor.DatapackAPI.Command.Execute">ExecuteSubCommandType</a>&nbsp;type,
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(dev.caveatemptor.DatapackAPI.Command.Execute.ExecuteSubCommandType,dev.caveatemptor.DatapackAPI.Entity.Entity)" class="member-name-link">ExecuteSubCommand</a><wbr>(<a href="ExecuteSubCommandType.html" title="enum class in dev.caveatemptor.DatapackAPI.Command.Execute">ExecuteSubCommandType</a>&nbsp;type,
+ <a href="../../Entity/Entity.html" title="interface in dev.caveatemptor.DatapackAPI.Entity">Entity</a>&nbsp;entity)</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(dev.caveatemptor.DatapackAPI.Command.Execute.ExecuteSubCommandType,java.lang.String)" class="member-name-link">ExecuteSubCommand</a><wbr>(<a href="ExecuteSubCommandType.html" title="enum class in dev.caveatemptor.DatapackAPI.Command.Execute">ExecuteSubCommandType</a>&nbsp;type,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</code></div>
-<div class="col-last odd-row-color">
+<div class="col-last even-row-color">
 <div class="block">Creates a new ExecuteSubCommand with the specified type and String value.</div>
 </div>
 </div>
@@ -159,7 +162,19 @@ implements <a href="../Command.html" title="interface in dev.caveatemptor.Datapa
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>type</code> - The type of the subcommand.</dd>
-<dd><code>value</code> - The value of the subcommand.</dd>
+<dd><code>value</code> - The value of the subcommand. Takes a String, which is probably somewhat dangerous.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="&lt;init&gt;(dev.caveatemptor.DatapackAPI.Command.Execute.ExecuteSubCommandType,dev.caveatemptor.DatapackAPI.Entity.Entity)">
+<h3>ExecuteSubCommand</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">ExecuteSubCommand</span><wbr><span class="parameters">(<a href="ExecuteSubCommandType.html" title="enum class in dev.caveatemptor.DatapackAPI.Command.Execute">ExecuteSubCommandType</a>&nbsp;type,
+ <a href="../../Entity/Entity.html" title="interface in dev.caveatemptor.DatapackAPI.Entity">Entity</a>&nbsp;entity)</span></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>type</code> - The type of the subcommand.</dd>
+<dd><code>entity</code> - The value of the subcommand.</dd>
 </dl>
 </section>
 </li>
