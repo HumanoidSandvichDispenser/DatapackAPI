@@ -4,6 +4,8 @@ import dev.caveatemptor.DatapackAPI.Command.Command;
 import dev.caveatemptor.DatapackAPI.Function.Function;
 import dev.caveatemptor.DatapackAPI.Namespace.Namespace;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -18,6 +20,7 @@ public class Datapack {
     private final String name;
     private final String description;
     private final List<String> authors = new ArrayList<>();
+    private File datapackImage;
 
 
     /**
@@ -61,6 +64,55 @@ public class Datapack {
         this.description = description;
         namespaces = new ArrayList<>();
         this.authors.addAll(List.of(authors));
+    }
+
+    /**
+     * Creates a new datapack with the give name and description.
+     * @param name Name of the datapack.
+     * @param description Description of the datapack.
+     * @param datapackImage Image for the datapack. Will be forced to 32x32 pixels.
+     */
+    public Datapack(String name, String description, File datapackImage) {
+        name = name.toLowerCase();
+
+        this.name = name;
+        this.description = description;
+        namespaces = new ArrayList<>();
+        this.datapackImage = datapackImage;
+    }
+
+    /**
+     * Creates a new datapack with the give name, description, and author.
+     * @param name Name of the datapack.
+     * @param description Description of the datapack.
+     * @param author Author of the datapack.
+     * @param datapackImage Image for the datapack. Will be forced to 32x32 pixels.
+     */
+    public Datapack(String name, String description, String author, File datapackImage) {
+        name = name.toLowerCase();
+
+        this.name = name;
+        this.description = description;
+        namespaces = new ArrayList<>();
+        authors.add(author);
+        this.datapackImage = datapackImage;
+    }
+
+    /**
+     * Creates a new datapack with the give name, description, and authors.
+     * @param name Name of the datapack.
+     * @param description Description of the datapack.
+     * @param authors Authors of the datapack.
+     * @param datapackImage Image for the datapack. Will be forced to 32x32 pixels.
+     */
+    public Datapack(String name, String description, String[] authors, File datapackImage) {
+        name = name.toLowerCase();
+
+        this.name = name;
+        this.description = description;
+        namespaces = new ArrayList<>();
+        this.authors.addAll(List.of(authors));
+        this.datapackImage = datapackImage;
     }
 
     /**
@@ -153,6 +205,11 @@ public class Datapack {
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
+        }
+
+        // datapack image
+        if (datapackImage != null) {
+            // TODO: Add datapack image
         }
     }
 }
