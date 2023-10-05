@@ -2,7 +2,7 @@ package dev.caveatemptor.DatapackAPI.Command.Setblock;
 
 import dev.caveatemptor.DatapackAPI.Block.BlockType;
 import dev.caveatemptor.DatapackAPI.Command.Command;
-import dev.caveatemptor.DatapackAPI.Position.Position;
+import dev.caveatemptor.DatapackAPI.Positional.Position.Position;
 
 
 /**

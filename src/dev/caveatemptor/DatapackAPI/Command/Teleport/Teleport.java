@@ -1,8 +1,8 @@
 package dev.caveatemptor.DatapackAPI.Command.Teleport;
 
 import dev.caveatemptor.DatapackAPI.Entity.Entity;
-import dev.caveatemptor.DatapackAPI.Location.Location;
-import dev.caveatemptor.DatapackAPI.Rotation.Rotation;
+import dev.caveatemptor.DatapackAPI.Positional.Location.Location;
+import dev.caveatemptor.DatapackAPI.Positional.Rotation.Rotation;
 
 
 // TODO: Implement facingEntity

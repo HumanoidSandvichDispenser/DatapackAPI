@@ -1,4 +1,4 @@
-package dev.caveatemptor.DatapackAPI.Location;
+package dev.caveatemptor.DatapackAPI.Positional.Location;
 
 public class Location {
     private final double x;

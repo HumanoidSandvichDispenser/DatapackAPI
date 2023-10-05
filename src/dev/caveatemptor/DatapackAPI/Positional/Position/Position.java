@@ -1,4 +1,4 @@
-package dev.caveatemptor.DatapackAPI.Position;
+package dev.caveatemptor.DatapackAPI.Positional.Position;
 
 
 /**

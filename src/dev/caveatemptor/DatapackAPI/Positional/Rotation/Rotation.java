@@ -1,4 +1,4 @@
-package dev.caveatemptor.DatapackAPI.Rotation;
+package dev.caveatemptor.DatapackAPI.Positional.Rotation;
 
 public class Rotation {
     private final double yaw;
