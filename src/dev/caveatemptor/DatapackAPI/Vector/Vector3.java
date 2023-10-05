@@ -5,7 +5,7 @@ package dev.caveatemptor.DatapackAPI.Vector;
  * A 3D vector, useful for storing locations and other 3D values.
  */
 public class Vector3 implements Vector {
-    private int x, y, z;
+    private double x, y, z;
     private boolean xRelative, yRelative, zRelative;
 
 
@@ -46,7 +46,7 @@ public class Vector3 implements Vector {
      *
      * @return The X component of the vector.
      */
-    public int getX() {
+    public double getX() {
         return x;
     }
 
@@ -65,7 +65,7 @@ public class Vector3 implements Vector {
      *
      * @return The Y component of the vector.
      */
-    public int getY() {
+    public double getY() {
         return y;
     }
 
@@ -84,7 +84,7 @@ public class Vector3 implements Vector {
      *
      * @return The Z component of the vector.
      */
-    public int getZ() {
+    public double getZ() {
         return z;
     }
 

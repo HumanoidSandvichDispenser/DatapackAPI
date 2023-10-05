@@ -5,7 +5,7 @@ package dev.caveatemptor.DatapackAPI.Vector;
  * A 2D vector, useful for storing rotation and other 2D values.
  */
 public class Vector2 implements Vector {
-    private int x, y;
+    private double x, y;
     private boolean xRelative, yRelative;
 
 
@@ -40,7 +40,7 @@ public class Vector2 implements Vector {
      *
      * @return The X component of the vector.
      */
-    public int getX() {
+    public double getX() {
         return x;
     }
 
@@ -59,7 +59,7 @@ public class Vector2 implements Vector {
      *
      * @return The Y component of the vector.
      */
-    public int getY() {
+    public double getY() {
         return y;
     }
 
